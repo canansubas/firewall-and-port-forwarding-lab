@@ -6,7 +6,7 @@ This lab focuses on understanding firewall behavior and port forwarding risks in
 ## Environment
 - Internet Connection: VDSL (lab only)
 - Modem: TP-LINK VC220-G3u
-- OS: Kali Linux (VirtualBox NAT)
+- OS: Kali Linux (VirtualBox NAT / Bridged Adapter)
 - Tools: tcpdump, python, nmap
 
 ## Objectives
@@ -15,8 +15,24 @@ This lab focuses on understanding firewall behavior and port forwarding risks in
 - Analyze security risks of exposed services
 
 ## Lab Topology
-(Will be added)
-
+```
+  Internet (VDSL)
+        |
+        v
+[ ISP Router / Modem ]
+[ TP-LINK VC220-G3u  ]
+        |
+        v
+[   Host Machine    ]
+[   192.168.1.x     ]
+        |
+        v
+[     VirtualBox    ]
+        |
+        v
+[  Kali Linux VM    ]
+[  192.168.1.101    ]
+```
 ## Experiments
 - Baseline firewall behavior
 - Port forwarding a local HTTP service
