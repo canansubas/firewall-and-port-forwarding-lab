@@ -65,3 +65,19 @@ port forwarding rules.
 
 This behavior indicates the presence of ISP-restricted firmware, which limits or
 disables manual WAN-to-LAN port forwarding regardless of user configuration.
+
+## Security Perspective
+This lab demonstrated that port forwarding is often misunderstood as a method for
+internet sharing. In reality, it only enables inbound access to internal services
+and cannot distribute internet connectivity across isolated network segments.
+
+Understanding such limitations is critical for designing secure and realistic
+network architectures.
+
+## Conclusion
+This project focused on understanding port forwarding, NAT behavior, and real-world
+router limitations.
+
+Although external service exposure could not be achieved due to firmware restrictions,
+the lab successfully highlighted how network security is shaped not only by configuration,
+but also by architecture and provider-controlled infrastructure.
