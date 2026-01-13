@@ -54,3 +54,14 @@ Port forwarding is commonly used for:
 - Increases attack surface if services are not secured
 - Vulnerable to scanning, brute-force, and exploitation attempts
 - Not a security solution by itself
+
+## Lab Findings and Limitations
+During this lab, multiple port forwarding attempts were made using different ports
+and configurations.
+
+Despite assigning a valid LAN IP address to the virtual machine (192.168.1.101)
+and switching from NAT to a bridged network adapter, the router consistently rejected
+port forwarding rules.
+
+This behavior indicates the presence of ISP-restricted firmware, which limits or
+disables manual WAN-to-LAN port forwarding regardless of user configuration.
