@@ -29,3 +29,28 @@ All experiments were conducted in a legal, isolated lab environment.
 - HTTP service is reachable locally
 - No inbound access from external networks
 - Firewall and NAT prevent unsolicited inbound connections
+
+## What is Port Forwarding?
+Port forwarding is a networking technique used to allow external (WAN) traffic
+to access a specific service hosted on an internal (LAN) device.
+It maps a public-facing port on a router to a private IP address and port.
+
+## Common Use Cases
+Port forwarding is commonly used for:
+- Hosting web services (HTTP/HTTPS)
+- Remote access services (SSH, RDP)
+- Game servers
+- IP cameras and monitoring systems
+- Testing and lab environments
+
+## Advantages and Risks
+### Advantages
+- Enables access to internal services from the internet
+- Useful for testing, development, and self-hosted services
+- Helps understand NAT and firewall behavior
+
+### Risks and Disadvantages
+- Exposes internal services directly to the internet
+- Increases attack surface if services are not secured
+- Vulnerable to scanning, brute-force, and exploitation attempts
+- Not a security solution by itself
