@@ -24,3 +24,8 @@ This lab focuses on understanding firewall behavior and port forwarding risks in
 
 ## Security Notes
 All experiments were conducted in a legal, isolated lab environment.
+
+## Baseline Observation
+- HTTP service is reachable locally
+- No inbound access from external networks
+- Firewall and NAT prevent unsolicited inbound connections
